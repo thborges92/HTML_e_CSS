@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="CSS/estilosAgendamento.css">
+        <title>Agendamento de Serviços</title>
+    </head>
+
+    <body class="fundo">
+
+    <div id="site">
+
+        <div>
+            <nav id="menu">
+                <ul class="menu">
+                    <li><a href="gerencia.html">Fale com a Gerência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="loja.html">Loja Virtual</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Nossa história</a></li>
+                    <li><a href="entradaParaProjeto.html">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header>
+            <img src="Imagens/logoth.jpg" width="150" height="100">
+        </header>
+
+        <br>
+
+        <div class="titulo">
+            <h2 id="idTitulo">
+                Agendamento de Serviços
+            </h2>
+        </div>
+
+        <br>
+
+        <p>
+            Agende sua revisão ou serviço de oficina com comodidade e rapidez. Preencha os dados no formulário que entraremos em contato para confirmar sua solicitação. Muito obrigado!
+        </p>
+
+        <br>
+
+        <br>
+
+        <form id="idAgendamento" name="Agendamento" action="recebido.html" method="POST">
+
+            <h3>
+                <b>Dados do Cliente</b>
+            </h3>
+
+            <br>
+
+                <table class="dados">
+                    <tr>
+                        <td>
+                            <input type="radio" id="idPF" name="pessoafisica" value="pf">
+                        </td>
+                        <td>
+                            Pessoa Física
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="radio" id="idPJ" name="pessoajuridica" value="pj">
+                        </td>
+                        <td>
+                            Pessoa Jurídica
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="dados">
+                    <tr>
+                        <td>
+                            <input type="text" id="idNome" name="nome" placeholder="Nome Completo / Razão Social" value="" width="50" size="50">
+                        </td>
+                    </tr>
+                    <tr>             
+                        <td>
+                            <input type="email" id="idEmail" name="email" placeholder="Email" value="" width="50" size="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="idTelefone" name="telefone" placeholder="Telefone" value="" width="15" size="15">
+                        </td>
+                    </tr>
+                </table>
+
+            <br>
+
+            <br>
+
+            <h3>
+                <b>Qual o seu Veículo?</b>
+            </h3>
+
+            <br>
+
+                <table class="dados">
+                    <tr>
+                        <td>
+                            <input type="text" id="idMarca" name="marca" placeholder="Marca" value="" width="50" size="50">
+                        </td>
+                    </tr>
+
+                    <tr>             
+                        <td>
+                            <input type="text" id="idModelo" name="modelo" placeholder="Modelo" value="" width="50" size="50">
+                        </td>
+                    </tr>
+
+                    <tr>             
+                        <td>
+                            <input type="text" id="idAno" name="ano" placeholder="Ano" value="" width="10" size="10">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" id="idPlaca" name="placa" placeholder="Placa" value="" width="10" size="10">
+                        </td>
+                    </tr>
+                </table>
+
+            <br>
+
+            <br>
+
+            <h3>
+                <b>Serviço?</b>
+            </h3>
+
+            <br>
+
+                <table class="dados">
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="idAlinhamento" name="alinhamento" value="">
+                        </td>
+                        <td>
+                            Alinhamento
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="idBalanceamento" name="balanceamento" value="">
+                        </td>
+                        <td>
+                            Balanceamento
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="idCambagem" name="cambagem" value="">
+                        </td>
+                        <td>
+                            Cambagem
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="idHigienizacao" name="higienizacao" value="">
+                        </td>
+                        <td>
+                            Higienização
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="idEletrica" name="eletrica" value="">
+                        </td>
+                        <td>
+                            Revisão Elétrica
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="idMecanica" name="mecanica" value="">
+                        </td>
+                        <td>
+                            Revisão Mecânica
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="idOleo" name="oleo" value="">
+                        </td>
+                        <td>
+                            Troca de Óleo
+                        </td>
+                    </tr>
+                </table>
+
+            <br>
+
+            <br>
+
+            <h3>
+                <b>Quando?</b>
+            </h3>
+
+            <br>
+
+                <table class="dados">
+                        <tr>
+                            <td>
+                                Preferências de horário
+                            </td>
+                        </tr>
+                    </div>    
+
+                    <div>
+                        
+                        <tr>
+                            <td>
+                                1 preferência
+                                <input type="date" id="idQuando" value="" width="10" size="10">
+                                <form method="post" action="cadastrar-enquete.php">
+                                    <select name="inicio">
+                                        <option value=" "> </option>
+                                        <option value="Manhã">Manhã</option>
+                                        <option value="Tarde">Tarde</option>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                2 preferência
+                                <input type="date" id="idQuando" value="" width="10" size="10">
+                                <form method="post" action="cadastrar-enquete.php">
+                                    <select name="inicio">
+                                        <option value=" "> </option>
+                                        <option value="Manhã">Manhã</option>
+                                        <option value="Tarde">Tarde</option>
+                            </td>
+                        </tr>
+                        
+                    </div>
+                </table>
+
+            <br>    
+
+            <br>
+
+            <h3>
+                <b>Observações</b>
+            </h3>
+
+            <br>
+
+                <table>
+                    <textarea name="observacoes" rows="10" cols="40" maxlength="500" placeholder="Olá, gostaria de agendar um serviço."></textarea>
+                </table>
+
+                <div class="container">
+                    <a href="recebido.html"><button type="button" class="btn">ENVIAR</button></a>
+                </div>
+
+        </form>
+
+    </div>
+
+    </body>
+
+</html>

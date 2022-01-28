@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="CSS/estilosGerencia.css">
+        <title>Fale com a Gerência</title>
+    </head>
+
+    <body class="fundo">
+
+        <div>
+            <nav id="menu">
+                <ul class="menu">
+                    <li><a href="gerencia.html">Fale com a Gerência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="loja.html">Loja Virtual</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="sobre.html">Nossa história</a></li>
+                    <li><a href="entradaParaProjeto.html">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header>
+            <img src="Imagens/logoth.jpg" width="150" height="100">
+        </header>
+
+        <br>
+
+        <div class="titulo">
+            <h2 id="idTitulo">
+                Fale com a Gerência
+            </h2>
+        </div>
+
+        <br>
+
+        <table class="dados">
+            <tr>
+                <td>
+                    <input type="text" id="idNome" name="nome" placeholder="Nome Completo / Razão Social" value="" width="50" size="50">
+                </td>
+            </tr>
+            <tr>             
+                <td>
+                    <input type="email" id="idEmail" name="email" placeholder="Email" value="" width="50" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="idTelefone" name="telefone" placeholder="Telefone" value="" width="15" size="15">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <br>
+
+        <h3>
+            <b>Qual o motivo da sua mensagem para o nosso gerente?</b>
+        </h3>
+
+        <table class="opcoes">        
+            <tr>
+                <td>
+                    <form method="post" action="cadastrar-enquete.php">
+                        <select name="contato">
+                            <option value=" "> </option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="outros">Outros</option>
+                        </select>    
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table>
+            <textarea name="observacoes" rows="10" cols="40" maxlength="500" placeholder="Digite aqui a sua mensagem."></textarea>
+        </table>
+
+        <div class="container">
+            <a href="enviada.html"><button type="button" class="btn">ENVIAR</button></a>
+        </div>
+
+    </body>
+
+</html>

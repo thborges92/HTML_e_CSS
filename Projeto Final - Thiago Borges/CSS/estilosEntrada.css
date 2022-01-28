@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    background-color: black;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0px;
+}
+
+.logoth {
+    background-color: white;
+    text-align: center;
+}
+
+.logoth img {
+    max-width:180px;
+    max-height:130px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.oficina img {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.btn {
+    background: #e52325;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 15px 40px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flash {
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+.container, .btn, .flash {
+    cursor: pointer;
+}
+
+@keyframes flash {
+    0% {
+        background: #e52325;
+        padding: 15px 40px;
+    }
+
+    50% {
+        background: #46090a;
+        padding: 20px 65px;
+    }
+
+    100% {
+        background: #e52325;
+        padding: 15px 40px;
+    }
+}
